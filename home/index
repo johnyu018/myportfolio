@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00c6ff;
+        }
+
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #00c6ff;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #00a2cc;
+        }
+
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        /* Navigation Menu */
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu li a:hover {
+    color: #00c6ff;
+}
+
+/* Dropdown submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #222;
+    list-style: none;
+    padding: 0;
+    min-width: 200px;
+}
+
+.submenu li a {
+    padding: 12px 15px;
+    display: block;
+    text-align: left; /* left-aligns submenu text */
+}
+
+.submenu li a:hover {
+    background-color: #333;
+}
+
+/* Show dropdown when hovering Services */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>SEO: JOHN YU</h2>
+</header>
+
+<nav>
+    <ul class="nav-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/myportfolio/">My Portfolio</a></li>
+
+       <li class="dropdown">
+            <a href="#">Services ▾</a>
+            <ul class="submenu">
+                <li><a href="#">SEO Optimization</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Website Development</a></li>
+            </ul>
+        </li>
+
+        <li><a href="/">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+
+<section class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Build something powerful and unstoppable.</p>
+    <a href="#" class="btn">Get Started</a>
+</section>
+
+<footer>
+    <p>© 2026 My Website | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
 
