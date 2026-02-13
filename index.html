@@ -119,6 +119,78 @@
     display: block;
 }
 
+        /* Main nav bar */
+.main-nav {
+  background-color: #1c1c1c;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center main menu items */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-nav ul li {
+  position: relative;
+}
+
+.main-nav a.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 18px;
+  display: block;
+  font-weight: bold;
+  transition: color 0.3s, background 0.3s;
+}
+
+.main-nav a.nav-link:hover {
+  color: #00c6ff;
+}
+
+/* Active page highlight */
+.main-nav a.active {
+  color: #00c6ff;
+  border-bottom: 2px solid #00c6ff;
+}
+
+/* Dropdown menu */
+.main-nav .dropdown:hover .submenu {
+  display: block;
+}
+
+.main-nav .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0; /* Left-align submenu */
+  background-color: #222;
+  padding: 0;
+  min-width: 220px;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+.main-nav .submenu li {
+  width: 100%;
+}
+
+.main-nav .submenu li a {
+  padding: 10px 15px;
+  font-weight: normal;
+  color: #eee;
+}
+
+.main-nav .submenu li a:hover {
+  background-color: #00c6ff;
+  color: #111;
+}
+
     </style>
 </head>
 
@@ -128,25 +200,21 @@
     <h2>SEO: JOHN YU</h2>
 </header>
 
-<nav>
-    <ul class="nav-menu">
-        <li><a href="./">Home</a></li>
-        <li><a href="./">My Portfolio</a></li>
-
-       <li class="dropdown">
-    <a href="#">Services ▾</a>
-    <ul class="submenu">
-        <li><a href="webdesign/">Web Design</a></li>
-        <li><a href="webdevelopment/">Website Development</a></li>
-        <li><a href="seo/">SEO Optimization</a></li>
-        <li><a href="digitalmarketing/">Digital Marketing</a></li>
-    </ul>
-</li>
-
-
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+<nav class="main-nav">
+  <ul>
+    <li><a href="./" class="nav-link active">Home</a></li>
+    <li><a href="./" class="nav-link">My Portfolio</a></li>
+    <li class="dropdown">
+      <a href="#" class="nav-link">Services ▾</a>
+      <ul class="submenu">
+        <li><a href="webdesign/" class="nav-link">Web Design</a></li>
+        <li><a href="webdevelopment/" class="nav-link">Website Development</a></li>
+        <li><a href="seo/" class="nav-link">SEO Optimization</a></li>
+        <li><a href="digitalmarketing/" class="nav-link">Digital Marketing</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
 </nav>
 
 
@@ -162,6 +230,7 @@
 
 </body>
 </html>
+
 
 
 
