@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact | John Yu SEO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+.main-nav {
+  background-color: #1c1c1c;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  font-weight: bold;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+  color: #00c6ff;
+}
+
+/* Contact Section */
+.contact-container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #1b1b1b;
+    border-radius: 8px;
+}
+
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    padding: 14px;
+    background-color: #00c6ff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00a2cc;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>SEO: JOHN YU</h2>
+</header>
+
+<nav class="main-nav">
+  <ul>
+    <li><a href="../">Home</a></li>
+    <li><a href="../portfolio/">My Portfolio</a></li>
+    <li><a href="../webdesign/">Web Design</a></li>
+    <li><a href="../seo/">SEO Optimization</a></li>
+    <li><a href="../contact/" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="contact-container">
+    <h1>Contact Me</h1>
+    <p>Let’s build something powerful for your business.</p>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 John Yu SEO | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
