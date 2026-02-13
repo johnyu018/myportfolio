@@ -1,63 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Website Development | My Professional Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Website Development | My Brand</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        body { font-family: 'Roboto', sans-serif; margin: 0; background: #121212; color: #f5f5f5; }
-        header { background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); padding: 25px; text-align: center; }
-        header h2 { font-size: 32px; letter-spacing: 2px; }
-        nav { background-color: #1c1c1c; }
-        .nav-menu { list-style: none; display: flex; justify-content: center; }
-        .nav-menu li { position: relative; }
-        .nav-menu li a { display: block; padding: 16px 25px; color: #f5f5f5; text-decoration: none; font-weight: 600; }
-        .nav-menu li a:hover { color: #00c6ff; }
-        .submenu { display: none; position: absolute; top: 100%; left: 0; background: #1a1a1a; min-width: 220px; text-align: left; padding: 0; }
-        .submenu li a { padding: 12px 20px; display: block; }
-        .submenu li a:hover { background: #333; }
-        .dropdown:hover .submenu { display: block; }
-        .content { padding: 80px 20px; max-width: 1000px; margin: 0 auto; }
-        h1 { font-size: 40px; margin-bottom: 20px; font-weight: 700; }
-        p { font-size: 18px; color: #ccc; margin-bottom: 20px; }
-        footer { background-color: #1c1c1c; text-align: center; padding: 20px; color: #aaa; margin-top: 50px; font-size: 14px; }
-    </style>
+<style>
+body{margin:0;font-family:Arial;background:#111;color:#eee;}
+header{background:linear-gradient(90deg,#0f2027,#203a43,#2c5364);padding:25px;text-align:center;}
+nav{background:#1c1c1c;text-align:center;}
+nav a{color:#fff;text-decoration:none;padding:15px 20px;display:inline-block;font-weight:bold;}
+nav a:hover{color:#00c6ff;}
+.container{max-width:1000px;margin:auto;padding:80px 20px;}
+h1{font-size:42px;}
+h2{color:#00c6ff;margin-top:40px;}
+p{color:#ccc;font-size:18px;line-height:1.7;}
+footer{background:#1c1c1c;text-align:center;padding:20px;margin-top:50px;color:#aaa;}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h2>MY BRAND</h2>
-</header>
+<header><h2>MY BRAND</h2></header>
 
 <nav>
-    <ul class="nav-menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="/myportfolio/">My Portfolio</a></li>
-        <li class="dropdown">
-            <a href="#">Services ▾</a>
-            <ul class="submenu">
-                <li><a href="/webdesign/">Web Design</a></li>
-                <li><a href="/webdevelopment/">Website Development</a></li>
-                <li><a href="/seo/">SEO Optimization</a></li>
-                <li><a href="/digitalmarketing/">Digital Marketing</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+<a href="/myportfolio/">Home</a>
+<a href="/myportfolio/myportfolio/">My Portfolio</a>
 </nav>
 
-<div class="content">
-    <h1>Website Development</h1>
-    <p>We build robust, high-performance websites tailored to your business needs. From front-end to back-end development, our team ensures seamless functionality, fast load times, and cross-platform compatibility.</p>
-    <p>Whether it’s an e-commerce platform, corporate website, or custom web application, we deliver scalable and secure solutions that grow with your business.</p>
+<div class="container">
+<h1>Website Development</h1>
+
+<p>
+We build fast, secure, and scalable websites engineered for performance.
+Our development process ensures reliability, clean code structure, and future scalability.
+</p>
+
+<h2>Development Features</h2>
+<p>
+✔ Optimized performance<br>
+✔ Clean structured coding<br>
+✔ SEO-ready architecture<br>
+✔ Secure deployment
+</p>
+
+<h2>Built for Growth</h2>
+<p>
+Your website is built not only for today but for long-term expansion,
+allowing new features and upgrades as your business grows.
+</p>
 </div>
 
-<footer>
-    <p>© 2026 My Professional Website | All Rights Reserved</p>
-</footer>
+<footer>© 2026 My Brand</footer>
 
 </body>
 </html>
